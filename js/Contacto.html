@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #fff7f0;
+    }
+
+    header {
+      background-color: #8b5cf6;
+      color: rgb(0, 0, 0);
+      padding: 1rem;
+      text-align: center;
+      font-size: large;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: large;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section p i {
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+
+    .whatsapp-icon { color: #25D366; }
+    .email-icon { color: #D44638; }
+    .instagram-icon { color: #E1306C; }
+    .facebook-icon { color: #1877F2; }
+
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInSlide 1.5s forwards;
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    form button {
+      margin-top: 1.5rem;
+      background-color: #b85c45;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #9c7a71;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color:  #9c7a71;
+      font-weight: bold;
+      color: #4d3c3c;
+    }
+
+    .header-container img {
+  width: 100px; 
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+ 
+}
+
+  </style>
+</head>
+<body>
+  <header>
+      <div class="header-container"> 
+    <nav>  
+    <h1><img src="../img/logo.png.png" alt="Logo Tejiendo Sueños">Contacto </h1>
+      <ul>
+      
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="Vision.html">Vision</a></li>
+        <li><a href="Mision.html">Mision</a></li>
+        <li><a href="videojuego.html">Videojuego</a></li>
+        <li><a href="Appinventor.html">App inventor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p><i class="fab fa-whatsapp whatsapp-icon"></i> Escríbeme al WhatsApp: <strong>+57 311 8640904</strong></p>
+      <p><i class="fas fa-envelope email-icon"></i> Correo electrónico: <strong>vianny0716@gmail.com</strong></p>
+      <p><i class="fab fa-instagram instagram-icon"></i> Instagram: <strong>tejiendo5680</strong></p>
+      <p><i class="fab fa-facebook facebook-icon"></i> Facebook: <strong>tejiendosueños</strong></p>
+    </section>
+
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <form action="#" method="POST">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tejiendo sueños</p>
+  </footer>
+</body>
+</html>
